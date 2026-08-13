@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Runtime artifacts
+amesim_worker.log
+*.log
+
+# Machine-specific MCP config (copy .mcp.json.example instead)
+.mcp.json
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

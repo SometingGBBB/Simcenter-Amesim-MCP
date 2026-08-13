@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "amesim": {
+      "command": "python",
+      "args": ["-m", "amesim_mcp.server"],
+      "cwd": "C:/path/to/amesim-mcp"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[project]
+name = "amesim-mcp-server"
+version = "0.1.0"
+description = "MCP server for Siemens Simcenter Amesim system-level simulation"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "rpyc>=5.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["amesim_mcp*"]
+
+[project.scripts]
+amesim-mcp = "amesim_mcp.server:main"
