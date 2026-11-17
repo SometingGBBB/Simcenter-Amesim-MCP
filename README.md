@@ -163,6 +163,10 @@ Amesim usage.
 - **Stuck holding a license token** — call `disconnect()`, or kill the
   `AMEPython.exe` process directly if the MCP server itself is gone.
 
+## Caution
+
+- **The AI can read files on your computer using the Python interpreter built into this MCP.**
+
 ## License
 
 MIT for `amesim_mcp/` — see [LICENSE](LICENSE). `vendor/` bundles
@@ -327,12 +331,17 @@ run_simulation → get_variable_values → save_circuit → disconnect
 
 - **"AMEPython.exe not found for version ..."** — `amesim_api.py`의
   `VERSION_DIRS` 경로가 실제 설치 경로와 다릅니다.
-- **워커가 멈춘 것 같거나 조용히 죽는 경우** — 프로젝트 루트의
+- **워커가 멈춘 것 같거나 동작하지 않는 경우** — 프로젝트 루트의
   `amesim_worker.log`를 확인하세요. 워커의 표준출력/에러(Amesim 쪽
   트레이스백 포함)가 여기 남습니다.
 - **라이선스 토큰을 반납하지 못하고 물려있는 경우** — `disconnect()`를
   호출하거나, MCP 서버 자체가 죽었다면 `AMEPython.exe` 프로세스를 직접
   종료하세요.
+
+
+  ## 주의 사항
+
+  -**이 MCP에 내장된 Python 인터프리터를 사용하여 AI가 컴퓨터 내 파일을 읽을 수 있습니다.**
 
 ## 라이선스
 
